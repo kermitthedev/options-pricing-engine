@@ -330,15 +330,15 @@ export default function EnhancedDashboard() {
       <header className="h-20 border-b flex items-center justify-between px-8 sticky top-0 bg-background/95 backdrop-blur z-50 shadow-sm">
         <div className="flex items-center gap-4">
           <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center shadow-lg">
-            <span className="text-white font-bold text-xl">Ω</span>
+            <span className="text-white font-bold text-xl">Q</span>
           </div>
           <div>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Advanced Options Pricing Engine
+              QuantLeap
             </h1>
             <p className="text-xs text-muted-foreground flex items-center gap-2">
               <Activity className="h-3 w-3" />
-              Institutional-Grade Quantitative Analytics
+              Quantitative Options Pricing Platform
             </p>
           </div>
         </div>
@@ -472,7 +472,7 @@ export default function EnhancedDashboard() {
         {/* TRADING GAME TAB */}
         {activeTab === "game" && <TradingSimulator />}
 
-        {/* OPTIONS PRICING TAB - COMPLETE VERSION */}
+        {/* OPTIONS PRICING TAB */}
         {activeTab === "pricing" && (
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-3">

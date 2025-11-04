@@ -1,50 +1,115 @@
-# React + TypeScript + Vite
+# QuantLeap - Quantitative Options Pricing Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![QuantLeap Logo](https://img.shields.io/badge/QuantLeap-v1.0-blue)
 
-Currently, two official plugins are available:
+**QuantLeap** is an advanced, institutional-grade options pricing and trading simulation platform. Built with React, TypeScript, and cutting-edge quantitative models, it provides real-time analytics, Greeks calculations, and interactive trading simulation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### Options Pricing Models
+- **Black-Scholes-Merton** - Classic analytical pricing
+- **Monte Carlo Simulation** - 50,000+ path simulations
+- **Binomial Trees** - Discrete-time pricing
+- **Heston Model** - Stochastic volatility
+- **Jump-Diffusion** - Merton's jump model
+- **Exotic Options** - Asian, Barrier, Digital
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Greeks & Risk Analytics
+- First-order Greeks (Delta, Gamma, Theta, Vega, Rho)
+- Higher-order Greeks (Vanna, Volga, Charm, Color)
+- Real-time sensitivity analysis
+- Greeks heatmaps and through-time visualization
 
-- Configure the top-level `parserOptions` property like this:
+### Trading Simulation
+- Real-time stock trading simulator
+- Options trading with live Greeks
+- 20+ real stocks (AAPL, TSLA, NVDA, etc.)
+- Market/Limit/Stop orders
+- Portfolio tracking with P&L
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Advanced Features
+- Volatility surface visualization
+- Probability distribution analysis
+- Strategy builder (spreads, straddles, butterflies)
+- Risk scenario analysis
+- AI-powered strategy suggestions
+- Workspace management
+- Export to PDF/CSV/JSON
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React 18, TypeScript
+- **UI:** Tailwind CSS, shadcn/ui, Radix UI
+- **Charts:** Recharts
+- **Math:** Custom quantitative finance library
+- **Build:** Vite
+
+## 📦 Installation
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/quantleap.git
+
+# Navigate to directory
+cd quantleap
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎯 Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Options Pricing:** Select parameters and pricing model
+2. **Trading Simulator:** Start market and trade stocks/options
+3. **Analytics:** Explore Greeks, volatility surfaces, and risk scenarios
+4. **Strategies:** Build and analyze multi-leg option strategies
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🧮 Pricing Models Explained
+
+### Black-Scholes-Merton
+The foundational model for European options pricing based on:
+- Constant volatility
+- Log-normal price distribution
+- No arbitrage opportunities
+
+### Monte Carlo
+Simulates thousands of price paths to estimate option value:
+- Handles complex payoffs
+- Path-dependent options
+- Variance reduction techniques
+
+### Heston Model
+Incorporates stochastic volatility:
+- Mean-reverting volatility
+- Volatility smile/skew
+- More realistic for long-dated options
+
+## 📊 Screenshots
+
+![Trading Simulator](docs/trading-sim.png)
+![Greeks Analysis](docs/greeks.png)
+![Volatility Surface](docs/vol-surface.png)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+MIT License - see LICENSE file for details
+
+## 👨‍💻 Author
+
+Built for quantitative finance education and research.
+
+## 🔗 Links
+
+- [Documentation](docs/README.md)
+- [API Reference](docs/api.md)
+- [Contributing Guide](CONTRIBUTING.md)
+
+---
+
+**QuantLeap** - Leap into Quantitative Finance 📈
